@@ -1,6 +1,6 @@
 "use strict"
 
-const grid_size = 16;
+const grid_size = 40;
 
 const gridCanvas = document.querySelector(".grid_canvas")
 
@@ -15,12 +15,12 @@ for (let i = 0; i < grid_size; i++) {
 const eachRow = document.querySelectorAll(".row")
 
 // creating cells for each row
-eachRow.forEach((e)=> {
+eachRow.forEach((row)=> {
     for (let i = 0; i < grid_size; i++) {
-        e.innerHTML += `
+        row.innerHTML += `
         <div class="cell"></div>
         `
     }
 })
-
+ 
 

@@ -7,7 +7,7 @@
 * {
     margin: 0;
     padding: 0;
-    font: inherit;
+    /* font: inherit; */
 }
 
 body {
@@ -23,9 +23,14 @@ img, picture, svg, video {
 
 /* utility classes */
 
+.center {
+    text-align: center;
+}
+
 /* specific styling */
+
 .grid_canvas {
-    border: 1px solid red;
+    border: 5px solid black;
 }
 
 .row {
@@ -33,8 +38,18 @@ img, picture, svg, video {
 }
 
 .cell {
-    width: 20px;
-    height: 20px;
-    border: 1px solid black;
+    width: 8px;
+    height: 8px;
+}
+
+.content_wrapper {
+    display: flex;
+    flex: 3fr 1fr;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.controls {
+    margin: 20px;
 }
 
