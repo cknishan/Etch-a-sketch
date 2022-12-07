@@ -1,6 +1,6 @@
 "use strict"
 
-const grid_size = 40;
+const grid_size = 64;
 
 const gridCanvas = document.querySelector(".grid_canvas")
 

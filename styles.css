@@ -16,7 +16,7 @@ body {
     place-items: center;
 }
 
-img, picture, svg, video {
+img, picture, video {
     display: block;
     max-width: 100%;
 }
@@ -53,3 +53,11 @@ img, picture, svg, video {
     margin: 20px;
 }
 
+/* on off button switch */
+.switch{
+    text-align: center;
+    display: inline-block;
+    width: 2rem;
+    font-weight: bolder;
+    color: green;
+}
