@@ -34,10 +34,9 @@ onOff.addEventListener('click', e => {
     toggleSwitch()
 })
 
-// drawing // coloring each cell on mousedown
+// drawing coloring each cell on mousedown
 eachCell.forEach((cell) => {
     cell.addEventListener("mouseover", (event) => {
-
         // adding a button control
         if (!enable_coloring) {
             return
@@ -50,4 +49,19 @@ eachCell.forEach((cell) => {
     cell.addEventListener("click", (event) => {
         cell.style.backgroundColor = cellColor
     })
+})
+
+// grid toggle function
+const grid = document.getElementById('show-grid')
+grid.addEventListener('change', (e) => {
+
+    if (grid.checked) {
+        eachCell.forEach( e => {
+            e.classList.add("border");
+        })
+    } else {
+        eachCell.forEach( e => {
+            e.classList.remove("border");
+        })
+    }
 })

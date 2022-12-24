@@ -1,7 +1,8 @@
 "use strict"
 
 const grid_size = 64;
-
+const sizeValue = document.getElementById('sizeValue')
+const sizeSlider = document.getElementById('sizeSlider')
 const gridCanvas = document.querySelector(".grid_canvas")
 
 // creating rows 

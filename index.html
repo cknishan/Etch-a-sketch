@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,11 @@
     <link rel="stylesheet" href="styles.css">
     <script src="js/main.js" defer></script>
     <script src="js/drawing.js" defer></script>
-    <title>Etch-a-sketch</title>
+    <title>Javascript Pixel Paint</title>
 </head>
+
 <body>
-    <h1 class="center">Etch-a-sketch</h1>
+    <h1 class="center">Javascript Pixel Paint</h1>
     <div class="content_wrapper">
         <!-- canvas container -->
         <div class="grid_canvas"></div>
@@ -18,13 +20,26 @@
         <!-- controls -->
         <div class="controls">
             <!-- on off slider -->
-            <div>
-                <h3>Continuous Drawing Mode</h3>
-                <svg class="switch" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="4" stroke="currentColor">
+            <div class="controls-div">
+
+                <h3>Continuous Mode</h3>
+                <svg class="switch" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="4"
+                    stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M5.636 5.636a9 9 0 1012.728 0M12 3v9" />
-                  </svg>                      
-            </div>            
+                </svg>
+            </div>
+            <p style="padding: 0.5rem 0rem 2rem;">Press Enter to change the continous mode.</p>
+<!-- 
+            <div id="sizeValue">16 x 16</div>
+            <input id="sizeSlider" type="range" value="16" min="1" max="64" /> -->
+            <div>
+                <input type="checkbox" name="show-grid" id="show-grid"> Show Grid
+            </div>
         </div>
     </div>
+    <script>
+
+    </script>
 </body>
+
 </html>

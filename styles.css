@@ -30,7 +30,7 @@ img, picture, video {
 /* specific styling */
 
 .grid_canvas {
-    border: 5px solid black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .row {
@@ -40,6 +40,10 @@ img, picture, video {
 .cell {
     width: 8px;
     height: 8px;
+}
+
+.border {
+    border: 0.2px solid rgba(34, 11, 11, 0.494);
 }
 
 .content_wrapper {
@@ -53,11 +57,16 @@ img, picture, video {
     margin: 20px;
 }
 
+.controls-div{
+    display: flex;
+    align-items: center;
+}
+
 /* on off button switch */
 .switch{
-    text-align: center;
     display: inline-block;
     width: 2rem;
     font-weight: bolder;
-    color: green;
+    color: black;
+    margin-left: 1rem;
 }
